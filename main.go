@@ -52,12 +52,12 @@ func uploadFile(w http.ResponseWriter, r *http.Request) {
     defer file.Close()
     defer tempFile.Close()
     // return that we have successfully uploaded our file!
-    fmt.Fprintf(w, "Successfully Uploaded File\n")
+    fmt.Fprintf(w, "上載成功\n")
 }
 
 func setupRoutes() {
     http.HandleFunc("/upload", uploadFile)
-    http.ListenAndServe(":8080", nil)
+    http.ListenAndServe(":8081", nil)
 }
 
 func main() {
