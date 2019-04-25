@@ -1,11 +1,8 @@
-# build
+# upload server run in docker
 ```
-dep init
-go build
-./goFileUpload
+docker-compose up -d
 ```
-# docker build and run
+# upload client run on mac
 ```
-docker build -t go-docker .
-docker run -d -p 8080:8080 go-docker
-```
+open client/index.html
+``` 

@@ -1,0 +1,8 @@
+.git
+.gitignore
+.dockerignore
+docker-compose.yml
+client
+README.md
+LICENSE
+goFileUpload
